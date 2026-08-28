@@ -14,10 +14,5 @@ I created this website using GitHub Pages and Jekyll.
 
 ## What I will write about
 
-I plan to write about:
-
-- Technology
-- Windows troubleshooting
-- Finance
-- Property
-- Personal notes
+I love this food.
+![My photo]({{ '/assets/images/IMAGE_210.jpg' | relative_url }})
