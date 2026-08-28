@@ -1,3 +1,5 @@
-title: Min's Blog
-2
+title: My Blog
+description: Personal notes, technology, finance and other topics
 theme: minima
+timezone: Australia/Sydney
+permalink: /:year/:month/:day/:title/
