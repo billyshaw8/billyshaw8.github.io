@@ -1,15 +1,23 @@
 ---
-2
 layout: post
-3
 title: "My First Blog Post"
-4
+date: 2026-08-28 13:00:00 +1000
+categories: personal
+tags: [introduction, github]
 ---
-5
- 
-6
-# Hello World
-7
- 
-8
-This is my first GitHub blog.
+
+Welcome to my first blog post.
+
+## Why I created this blog
+
+I created this website using GitHub Pages and Jekyll.
+
+## What I will write about
+
+I plan to write about:
+
+- Technology
+- Windows troubleshooting
+- Finance
+- Property
+- Personal notes
