@@ -1,8 +1,7 @@
 ---
 layout: home
-title: My Blog
+title: My Blog readme.md
 ---
 
 Welcome to my blog.
 
-I write about technology, finance, property and things I learn.
