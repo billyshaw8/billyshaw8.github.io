@@ -1,7 +1,7 @@
 ---
 layout: home
-title: My Blog readme.md
+title: 自娱自乐 千万不要瞎转
 ---
 
-Welcome to my blog.
+自己知道就可以啦 千万不要转告给别人
 
