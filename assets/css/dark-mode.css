@@ -1,0 +1,77 @@
+/* Theme toggle */
+.theme-toggle {
+  margin: 0.35rem 0 0.35rem 0.75rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid currentColor;
+  border-radius: 0.35rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  opacity: 0.78;
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* Minima theme colors in dark mode */
+html[data-theme="dark"] body {
+  background-color: #17191c;
+  color: #e6e6e6;
+}
+
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .site-footer {
+  background-color: #17191c;
+  border-color: #3a3f45;
+}
+
+html[data-theme="dark"] .page-content {
+  background-color: #17191c;
+}
+
+html[data-theme="dark"] a,
+html[data-theme="dark"] .site-title,
+html[data-theme="dark"] .site-title:visited,
+html[data-theme="dark"] .site-nav .page-link {
+  color: #9ecbff;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #c4deff;
+}
+
+html[data-theme="dark"] .post-meta,
+html[data-theme="dark"] .footer-col-wrapper {
+  color: #b2b8bf;
+}
+
+html[data-theme="dark"] blockquote,
+html[data-theme="dark"] pre,
+html[data-theme="dark"] code {
+  border-color: #3a3f45;
+  background-color: #22262b;
+  color: #e6e6e6;
+}
+
+html[data-theme="dark"] hr {
+  border-color: #3a3f45;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  color: #e6e6e6;
+}
+
+@media (max-width: 600px) {
+  .theme-toggle {
+    display: block;
+    margin: 0.5rem 0 0;
+  }
+}
