@@ -1,25 +1,37 @@
-/* Theme toggle: compact icon button in the top-right of the header */
+/* Fixed icon-only theme toggle, visible outside Minima's collapsed navigation */
 .theme-toggle {
-  position: absolute;
-  top: 0.65rem;
-  right: max(1rem, calc((100% - 800px) / 2));
-  z-index: 2;
+  position: fixed;
+  top: max(1rem, env(safe-area-inset-top));
+  right: max(1rem, env(safe-area-inset-right));
+  z-index: 9999;
   display: grid;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   place-items: center;
   padding: 0;
-  border: 1px solid currentColor;
+  border: 1px solid #777;
   border-radius: 50%;
-  background: transparent;
-  color: inherit;
-  font-size: 1.25rem;
-  line-height: 1;
+  background: #fff;
+  color: #222;
   cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme-toggle svg {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 .theme-toggle:hover {
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 .theme-toggle:focus-visible {
@@ -27,20 +39,16 @@
   outline-offset: 3px;
 }
 
-/* Minima theme colors in dark mode */
 html[data-theme="dark"] body {
   background-color: #17191c;
   color: #e6e6e6;
 }
 
 html[data-theme="dark"] .site-header,
-html[data-theme="dark"] .site-footer {
-  background-color: #17191c;
-  border-color: #3a3f45;
-}
-
+html[data-theme="dark"] .site-footer,
 html[data-theme="dark"] .page-content {
   background-color: #17191c;
+  border-color: #3a3f45;
 }
 
 html[data-theme="dark"] a,
@@ -72,5 +80,7 @@ html[data-theme="dark"] hr {
 }
 
 html[data-theme="dark"] .theme-toggle {
-  color: #e6e6e6;
+  border-color: #aab2bd;
+  background: #22262b;
+  color: #f3f4f6;
 }
