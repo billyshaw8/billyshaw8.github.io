@@ -26,8 +26,10 @@
   applyTheme(savedTheme || (darkPreference.matches ? 'dark' : 'light'));
 
   document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('.site-header');
     const nav = document.querySelector('.site-nav');
-    if (!nav || document.getElementById('theme-toggle')) return;
+    const host = header || nav;
+    if (!host || document.getElementById('theme-toggle')) return;
 
     const button = document.createElement('button');
     button.id = 'theme-toggle';
@@ -43,7 +45,7 @@
       }
     });
 
-    nav.appendChild(button);
+    host.appendChild(button);
     applyTheme(root.dataset.theme);
   });
 })();
