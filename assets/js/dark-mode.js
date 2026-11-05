@@ -12,13 +12,13 @@
   }
 
   function applyTheme(theme) {
-    root.dataset.theme = theme;
+    const isDark = theme === 'dark';
+    root.dataset.theme = isDark ? 'dark' : 'light';
     const button = document.getElementById('theme-toggle');
     if (button) {
-      const isDark = theme === 'dark';
       button.setAttribute('aria-pressed', String(isDark));
-      button.setAttribute('aria-label', isDark ? '切换到浅色模式' : '切换到深色模式');
-      button.textContent = isDark ? '☀️ 浅色模式' : '🌙 深色模式';
+      button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      button.textContent = isDark ? '☀️' : '🌙';
     }
   }
 
