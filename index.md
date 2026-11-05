@@ -1,8 +1,5 @@
 ---
 layout: home
-title: My Blog index
+title: 索引
 ---
 
-Welcome to my blog.
-
-I write about technology, finance, property and things I learn.
