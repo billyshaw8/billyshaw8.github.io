@@ -1,19 +1,25 @@
-/* Theme toggle */
+/* Theme toggle: compact icon button in the top-right of the header */
 .theme-toggle {
-  margin: 0.35rem 0 0.35rem 0.75rem;
-  padding: 0.4rem 0.65rem;
+  position: absolute;
+  top: 0.65rem;
+  right: max(1rem, calc((100% - 800px) / 2));
+  z-index: 2;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  padding: 0;
   border: 1px solid currentColor;
-  border-radius: 0.35rem;
+  border-radius: 50%;
   background: transparent;
   color: inherit;
-  font: inherit;
-  line-height: 1.4;
+  font-size: 1.25rem;
+  line-height: 1;
   cursor: pointer;
 }
 
-.theme-toggle:hover,
-.theme-toggle:focus-visible {
-  opacity: 0.78;
+.theme-toggle:hover {
+  opacity: 0.75;
 }
 
 .theme-toggle:focus-visible {
@@ -67,11 +73,4 @@ html[data-theme="dark"] hr {
 
 html[data-theme="dark"] .theme-toggle {
   color: #e6e6e6;
-}
-
-@media (max-width: 600px) {
-  .theme-toggle {
-    display: block;
-    margin: 0.5rem 0 0;
-  }
 }
