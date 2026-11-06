@@ -2,26 +2,39 @@
 ---
 @import "minima";
 
+/* Global Dark Mode Overrides for Minima */
 @media (prefers-color-scheme: dark) {
   :root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
     --brand-color: #58a6ff;
-    --background-color: #0d1117;
-    --text-color: #c9d1d9;
-    --table-header-bg-color: #161b22;
-    --table-border-color: #30363d;
   }
 
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+  /* Force background and text on post and page containers */
+  html, body, .page-content, .post, .post-content, .wrapper {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
   }
 
+  /* Headers and navigation */
   .site-header, .site-footer {
-    background-color: #161b22;
-    border-color: #30363d;
+    background-color: #1a1a1a !important;
+    border-color: #333333 !important;
   }
 
-  .site-title, .site-nav .page-link {
-    color: #c9d1d9 !important;
+  .site-title, .site-title:visited, .page-link, .post-title, .post-link {
+    color: #ffffff !important;
+  }
+
+  .post-meta {
+    color: #8b949e !important;
+  }
+
+  /* Code blocks and pre elements */
+  pre, code, .highlight {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #333333 !important;
   }
 }
+
